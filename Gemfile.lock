@@ -33,6 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  debugger
   em-websocket
   eventmachine
   letters
