@@ -1,6 +1,6 @@
 # Create Chat
 
-WebSockets chat backed by [EventMachine](https://github.com/eventmachine/eventmachine).
+WebSocket chat backed by [EventMachine](https://github.com/eventmachine/eventmachine).
 
 # License
 

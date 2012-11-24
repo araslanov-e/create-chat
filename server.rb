@@ -54,16 +54,18 @@ end
 
 
 class Client < Struct.new(:nick, :ws)
+
+  CMDS = [:ls, :help, :chn, :srv]
   
   def listen(msg)
     msg.match /^(\$?)(.*)$/ do |m|
       if m[1] == '$'
         if z = m[2].match(/^(.*?)\s(.*)$/)
           a = z[1].to_sym
-          send a, z[2] if respond_to? a
+          send a, z[2] if CMDS.include? a
         else
           a = m[2].to_sym
-          send a if respond_to? a
+          send a if CMDS.include? a
         end
       else
         $clients.say MSGS[:say] % [nick, msg]
@@ -107,7 +109,7 @@ end
 module HttpServer
 
   def receive_data data
-    $logger.info "HTTP-запрос: #{ data }"
+    $logger.info "Получен HTTP-запрос: #{ data }"
     send_data <<RESP
 HTTP/1.0 200 OK
 Content-Type: text/html; charset=UTF-8
@@ -157,7 +159,7 @@ EventMachine.run do
   EventMachine.start_server ADDR, HTTP_PORT, HttpServer
   
   $logger.info "Create Chat (версия #{ VER })"
-  $logger.info "WebSockets сервер запущен на #{ ADDR }:#{ WS_PORT }"
+  $logger.info "WebSocket сервер запущен на #{ ADDR }:#{ WS_PORT }"
   $logger.info "HTTP сервер запущен на #{ ADDR }:#{ HTTP_PORT }"
   
 end
