@@ -1866,3 +1866,396 @@ Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
 I, [2012-11-25T03:43:33.808603 #11933]  INFO -- : Соединение c Без имени #169 закрыто
 I, [2012-11-25T03:43:56.196928 #11933]  INFO -- : Сообщение от Без имени #734: $srv
 I, [2012-11-25T03:44:04.044122 #11933]  INFO -- : Соединение c Без имени #734 закрыто
+I, [2012-11-25T03:46:41.251032 #12086]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:46:41.251206 #12086]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:46:41.251295 #12086]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:46:47.923346 #12086]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:46:48.091108 #12086]  INFO -- : Установлено соединение c Без имени #937
+I, [2012-11-25T03:46:48.170329 #12086]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:47:05.608715 #12086]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+I, [2012-11-25T03:47:06.118933 #12086]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: image/png,image/*;q=0.8,*/*;q=0.5
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+I, [2012-11-25T03:47:06.124612 #12086]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+I, [2012-11-25T03:47:06.129016 #12086]  INFO -- : Установлено соединение c Без имени #876
+I, [2012-11-25T03:49:25.863400 #12086]  INFO -- : Соединение c Без имени #937 закрыто
+I, [2012-11-25T03:49:25.863885 #12086]  INFO -- : Соединение c Без имени #876 закрыто
+I, [2012-11-25T03:49:49.133867 #12150]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:49:49.134028 #12150]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:49:49.134113 #12150]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:49:50.783721 #12150]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:49:51.083833 #12150]  INFO -- : Установлено соединение c Без имени #130
+I, [2012-11-25T03:49:51.130883 #12150]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:49:54.505713 #12150]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:49:57.138609 #12150]  INFO -- : Установлено соединение c Без имени #798
+I, [2012-11-25T03:49:58.551552 #12150]  INFO -- : Соединение c Без имени #798 закрыто
+I, [2012-11-25T03:49:58.564232 #12150]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:49:58.695499 #12150]  INFO -- : Установлено соединение c Без имени #527
+I, [2012-11-25T03:50:01.190498 #12150]  INFO -- : Соединение c Без имени #527 закрыто
+I, [2012-11-25T03:50:01.197509 #12150]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:50:01.334666 #12150]  INFO -- : Установлено соединение c Без имени #755
+I, [2012-11-25T03:50:12.290001 #12150]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:50:12.369777 #12150]  INFO -- : Соединение c Без имени #130 закрыто
+I, [2012-11-25T03:50:12.468936 #12150]  INFO -- : Установлено соединение c Без имени #910
+I, [2012-11-25T03:50:12.535335 #12150]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:50:19.150658 #12150]  INFO -- : Соединение c Без имени #755 закрыто
+I, [2012-11-25T03:50:19.151131 #12150]  INFO -- : Соединение c Без имени #910 закрыто
+I, [2012-11-25T03:51:17.225862 #12167]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:51:17.226025 #12167]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:51:17.226112 #12167]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:51:18.864908 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:51:27.247884 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:51:30.849329 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+
+I, [2012-11-25T03:51:35.782948 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:51:39.800447 #12167]  INFO -- : Установлено соединение c Без имени #725
+I, [2012-11-25T03:51:39.879150 #12167]  INFO -- : Установлено соединение c Без имени #971
+I, [2012-11-25T03:51:39.945126 #12167]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:51:44.360301 #12167]  INFO -- : Соединение c Без имени #725 закрыто
+I, [2012-11-25T03:51:44.369241 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:51:44.511274 #12167]  INFO -- : Установлено соединение c Без имени #677
+I, [2012-11-25T03:51:56.444246 #12167]  INFO -- : Соединение c Без имени #677 закрыто
+I, [2012-11-25T03:51:56.454105 #12167]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:51:56.642340 #12167]  INFO -- : Установлено соединение c Без имени #413
+I, [2012-11-25T03:52:01.938041 #12167]  INFO -- : Сообщение от Без имени #413: $help
+I, [2012-11-25T03:52:04.816887 #12167]  INFO -- : Сообщение от Без имени #413: Привет
+I, [2012-11-25T03:52:08.111427 #12167]  INFO -- : Сообщение от laise: $chn laise
+I, [2012-11-25T03:52:16.334740 #12167]  INFO -- : Сообщение от Без имени #971: $ls
+I, [2012-11-25T03:52:22.107948 #12167]  INFO -- : Сообщение от laise2: $chn laise2
+I, [2012-11-25T03:52:24.098766 #12167]  INFO -- : Сообщение от laise2: $ls
+I, [2012-11-25T03:52:26.864010 #12167]  INFO -- : Сообщение от laise2: $srv
+I, [2012-11-25T03:52:32.044834 #12167]  INFO -- : Сообщение от laise2: sdfsfd
+I, [2012-11-25T03:52:39.562273 #12167]  INFO -- : Сообщение от laise: vv
+I, [2012-11-25T03:52:42.018687 #12167]  INFO -- : Сообщение от laise: $srv
+I, [2012-11-25T03:52:44.261491 #12167]  INFO -- : Сообщение от laise: $srv
+I, [2012-11-25T03:53:26.281508 #12167]  INFO -- : Соединение c laise2 закрыто
+I, [2012-11-25T03:53:26.282016 #12167]  INFO -- : Соединение c laise закрыто
+I, [2012-11-25T03:53:44.965404 #12193]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:53:44.965568 #12193]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:53:44.965655 #12193]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:53:45.944186 #12193]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:53:46.196020 #12193]  INFO -- : Установлено соединение c Без имени #593
+I, [2012-11-25T03:53:46.278518 #12193]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:53:56.528303 #12193]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:53:56.736974 #12193]  INFO -- : Установлено соединение c Без имени #807
+I, [2012-11-25T03:54:38.211568 #12193]  INFO -- : Соединение c Без имени #593 закрыто
+I, [2012-11-25T03:54:38.212070 #12193]  INFO -- : Соединение c Без имени #807 закрыто
+I, [2012-11-25T03:56:36.949226 #12213]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:56:36.949392 #12213]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:56:36.949479 #12213]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:56:39.254956 #12213]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:56:39.493477 #12213]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:56:41.748281 #12213]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:56:41.988381 #12213]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:56:45.674469 #12213]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:57:19.611415 #12228]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:57:19.611580 #12228]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:57:19.611666 #12228]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:57:20.643216 #12228]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Cache-Control: max-age=0
+
+
+I, [2012-11-25T03:57:20.848388 #12228]  INFO -- : Установлено соединение c Без имени #262
+I, [2012-11-25T03:57:29.198139 #12228]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+I, [2012-11-25T03:57:43.274450 #12228]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:17.0) Gecko/17.0 Firefox/17.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+I, [2012-11-25T03:58:10.866520 #12228]  INFO -- : Сообщение от Без имени #262: fgb
+I, [2012-11-25T03:58:18.280073 #12228]  INFO -- : Соединение c Без имени #262 закрыто
+I, [2012-11-25T03:59:40.609508 #12251]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T03:59:40.609673 #12251]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T03:59:40.609760 #12251]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T03:59:44.798956 #12251]  INFO -- : HTTP-запрос: GET / HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Cache-Control: max-age=0
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:59:45.238932 #12251]  INFO -- : Установлено соединение c Без имени #936
+I, [2012-11-25T03:59:45.329840 #12251]  INFO -- : HTTP-запрос: GET /favicon.ico HTTP/1.1
+Host: localhost:7326
+Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+I, [2012-11-25T03:59:48.007609 #12251]  INFO -- : Сообщение от Без имени #936: fgb
+I, [2012-11-25T03:59:56.447222 #12251]  INFO -- : Соединение c Без имени #936 закрыто
+I, [2012-11-25T04:00:05.181905 #12262]  INFO -- : Create Chat (версия 0.1)
+I, [2012-11-25T04:00:05.182072 #12262]  INFO -- : WebSockets сервер запущен на 0.0.0.0:7325
+I, [2012-11-25T04:00:05.182157 #12262]  INFO -- : HTTP сервер запущен на 0.0.0.0:7326
+I, [2012-11-25T04:00:06.460776 #12262]  INFO -- : Установлено соединение c Без имени #219
+I, [2012-11-25T04:00:12.211587 #12262]  INFO -- : Соединение c Без имени #219 закрыто
