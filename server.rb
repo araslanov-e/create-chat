@@ -2,6 +2,7 @@
 # encoding: utf-8
 
 require 'rubygems'
+require 'bundler/setup'
 require 'eventmachine'
 require 'em-websocket'
 require 'logger'
