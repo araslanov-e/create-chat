@@ -47,7 +47,9 @@ class ClientsManager
   end
   
   def nicks
-    @cli.map{ |c| c.nick }
+    @cli.map do |c|
+      c.nick
+    end
   end
   
 end
