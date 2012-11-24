@@ -4,6 +4,5 @@ require 'rubygems'
 require 'bundler/setup'
 require 'daemons'
 
-puts File.join(File.dirname(__FILE__), 'server.rb')
 Daemons.run File.join(File.dirname(__FILE__), 'server.rb')
 
