@@ -1,5 +1,11 @@
 # encoding: utf-8
 
+# 
+#  TODO: В настоящее время cli-вызовы и история сообщений работают в синхронном режиме,
+#  что может привести к парализации EM-loop, и вообще не соответствует идеологии EM.
+#  Нужно переписать эти части с использованием Popen или чего-то подобного.
+# 
+
 require 'rubygems'
 require 'bundler/setup'
 require 'eventmachine'
@@ -22,6 +28,26 @@ MSGS = CFG[:msgs]
 WEB = ERB.new(File.read(File.join(WD, 'client.erb'))).result
 
 
+class History
+
+  @f = nil
+  
+  def initialize(filename)
+    @f = File.open(filename, 'a')
+  end
+
+  def get
+    `tail -n 100 "#{ @f.path }"`
+  end
+  
+  def puts(msg)
+    @f.puts msg
+    @f.flush
+  end
+  
+end
+
+
 class ClientsManager
   
   def initialize
@@ -29,8 +55,9 @@ class ClientsManager
   end
   
   def add(c)
-    @cli << c
     say MSGS[:in] % c.nick
+    @cli << c
+    c.say $history.get
     c.say MSGS[:hi]
   end
   
@@ -43,6 +70,7 @@ class ClientsManager
     @cli.each do |c|
       c.say msg
     end
+    $history.puts msg
   end
   
   def nicks
@@ -69,7 +97,7 @@ class Client < Struct.new(:nick, :ws)
           send a if CMDS.include? a
         end
       else
-        $clients.say MSGS[:say] % [nick, msg]
+        $clients.say MSGS[:say] % [Time.now.strftime('%d.%m.%Y %H:%M:%S'), nick, msg]
       end
     end
   end
@@ -126,6 +154,8 @@ end
 
 EventMachine.run do
 
+  $history = History.new(File.join(WD, 'history.log'))
+  
   $logger = Logger.new(File.join(WD, 'server.log'))
   $logger.level = Logger::DEBUG
   
