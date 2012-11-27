@@ -70,7 +70,6 @@ class ClientsManager
     @cli.each do |c|
       c.say msg
     end
-    $history.puts msg
   end
   
   def nicks
@@ -97,7 +96,9 @@ class Client < Struct.new(:nick, :ws)
           send a if CMDS.include? a
         end
       else
-        $clients.say MSGS[:say] % [Time.now.strftime('%H:%M'), nick, msg]
+        str = MSGS[:say] % [Time.now.strftime('%H:%M'), nick, msg]
+        $clients.say str
+        $history.puts str
       end
     end
   end
