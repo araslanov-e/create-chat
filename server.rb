@@ -97,7 +97,7 @@ class Client < Struct.new(:nick, :ws)
           send a if CMDS.include? a
         end
       else
-        $clients.say MSGS[:say] % [Time.now.strftime('%d.%m.%Y %H:%M:%S'), nick, msg]
+        $clients.say MSGS[:say] % [Time.now.strftime('%H:%M'), nick, msg]
       end
     end
   end
