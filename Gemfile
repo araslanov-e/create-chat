@@ -12,3 +12,5 @@ group :development do
   gem "debugger"
 end
 
+# template language
+gem "slim"

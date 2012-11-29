@@ -1,44 +1,52 @@
-<html>
-  <head>
-    <title>Create Chat (версия <%= VER %>)</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script>
-      
-      var URL = 'ws://<%= HOST %>:<%= WS_PORT %>'
-      
+doctype html
+html
+  head
+    title Create Chat (версия #{VER})
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+
+    css:
+      body {margin: 0px; padding: 0px;}
+      body, textarea, input, a, a:visited {font: 14px/20px Courier New; color: #fff; background-color: #000;}
+      a:hover {color: blue;}
+      textarea, input {padding: 10px; border: solid 1px silver; width: 600px; max-width: 600px;}
+      #main {width: 650px; text-align: center; margin: 0px auto;}
+      #head {margin: 50px 0 20px;}
+      #log {overflow: hidden; margin-bottom: 10px; height: 300px}
+
+    javascript:
+      var URL = 'ws://#{HOST}:#{WS_PORT}'
+
       $(function(){
-      
         var log = $('#log').val(''), msg = $('#msg').val('')
-        
+
         function echo(msg) {
           log.val(log.val() + msg + "\n")
             .scrollTop(log[0].scrollHeight - log.height())
         }
-        
+
         function dbg(msg) {
           echo('<' + msg + '>')
         }
-        
-        
+
         //
         //  WebSocket setup
-        
+
         var ws = null
-        
+
         function openws() {
           try {
             ws = new WebSocket(URL);
-            
+
             ws.onmessage = function(evt) {
               echo(evt.data)
             }
-            
+
             ws.onclose = function() {
               ws = null
               dbg('Соединение закрыто (повторное соединение через 5 сек.)')
               setTimeout(openws, 5000)
             }
-            
+
             ws.onopen = function() {
               dbg('Соединение открыто')
             }
@@ -47,112 +55,64 @@
             dbg('Ошибка: ' + err.message)
           }
         }
-        
+
         openws()
-        
-        
+
         //
         //  Interface setup
-        
+
         var hist = [], hisn = 0
-        
+
         function hisv() {
           if (0 <= hisn && hisn < hist.length) msg.val(hist[hisn])
           else if (hisn == hist.length) msg.val('')
         }
-        
+
         msg.on('keypress keydown', function(evt){
           var key = evt.which || evt.keyCode
-          
+
           // ENTER
           if (key == 13) {
             str = msg.val()
             if (str != '' && ws) {
-            
+
               ws.send(str)
               msg.val('')
-              
+
               hist.push(str)
               hisn = hist.length
-              
+
             }
           }
-          
+
           // UP
           else if (key == 38) {
             hisn--
             if (hisn < 0) hisn = 0
             hisv()
           }
-          
+
           // DOWN
           else if (key == 40) {
             hisn++
             if (hisn > hist.length) hisn = hist.length
             hisv()
           }
-          
+
         }).focus()
-        
+
       })
-      
-    </script>
-    <style type="text/css">
 
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-
-      body, textarea, input, a, a:visited {
-        font-family: Courier New;
-        font-size: 14px;
-        color: white;
-        background-color: black;
-      }
-
-      a:hover {
-        color: blue;
-      }
-
-      textarea, input {
-        padding: 10px;
-        border: solid 1px silver;
-        width: 600px;
-        max-width: 600px;
-      }
-
-      #main {
-        width: 650px;
-        text-align: center;
-        margin: 0px auto;
-      }
-
-      #head {
-        margin-top: 50px;
-        margin-bottom: 20px;
-      }
-
-      #log {
-        overflow: hidden;
-        margin-bottom: 10px;
-        height: 300px
-      }
-
-    </style>
-  </head>
-  <body>
-    <div id="main">
-      <div id="head">
-        <h2>Create Chat (версия <%= VER %>)</h2>
-        <p>
-          Исходный код на <a href="https://github.com/907th/create-chat" target="_blank">github</a>
-          (по лицензии <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">GPL</a>).
-        </p>
-      </div>
-      <textarea id="log" readonly="true"></textarea>
-      <input id="msg">
-    </div>
-  </body>
-</html>
+  body
+    #main
+      #head
+        h2 Create Chat (версия #{VER})
+        p
+          | Исходный код на &nbsp;
+          a href="https://github.com/907th/create-chat" target="_blank" github
+          | &nbsp; (по лицензии &nbsp;
+          a href="http://www.gnu.org/licenses/gpl.html" target="_blank" GPL
+          | ).
+        textarea#log readonly="true"
+        input#msg
 

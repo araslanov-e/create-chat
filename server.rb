@@ -13,7 +13,7 @@ require 'em-websocket'
 require 'logger'
 require 'yaml'
 require 'erb'
-
+require 'slim'
 
 WD = File.dirname(__FILE__)
 CFG = YAML.load(File.read(File.join(WD, 'config.yml')))
@@ -25,8 +25,8 @@ WS_PORT = CFG[:ws_port]
 HTTP_PORT = CFG[:http_port]
 MSGS = CFG[:msgs]
 
-WEB = ERB.new(File.read(File.join(WD, 'client.erb'))).result
-
+#WEB = ERB.new(File.read(File.join(WD, 'client.erb'))).result
+WEB = Slim::Template.new(File.join(WD, 'client.slim')).render
 
 class History
 
